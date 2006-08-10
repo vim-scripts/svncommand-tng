@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1633
+
+This is an update to Adam Lazur's svncommand script, vimscript #922, which was itself based on the cvscommand script (now vcscommand), vimscript #90.
+
+Keywords: svn SVN svncommand subversion Subversion
+
+Basically I pulled a newer version of cvscommand (1.76) that had a lot of nice updates that I wanted to use with Subversion and did what Adam did, which is lots of 's/CVS/SVN/'.  Then hacked on it till it worked like it was supposed to.  I also pulled in Adams SVNCommitDiff function for displaying a diff for a svn-commit.* file.  
+
+Finally, I added a few features of my very own:
+ - Option to enable automatic execution of SVNCommitDiff when a svn-commit.* file is loaded.
+ - A simple property editor.  SVNPropedit with no options runs "svn proplist" to give you a listing of all the set properties.  If given an argument, it grabs the property of that name and gives you a window to update the value in.
+ 
+The vcscommand script has just been updated to support Subversion (8-10-06), but so far there is not a property editor or CommitDiff function.
+
+Shoot me an email if you find my additions useful! 

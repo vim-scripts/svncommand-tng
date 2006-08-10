@@ -1,0 +1,28 @@
+2006.08.10  1.76.2
+    - Added the SVNCommitDiff from 1.67.2 into this script
+    - Added a new option, SVNAutoCommitDiff, that sets up the autocommands 
+      neccessary to gracefully run the SVNCommitDiff() function when a
+      svn-commit.* file is loaded.
+    - Updated the documentation with the new options/functions
+
+2006.07.12  1.76.1
+    - Updated to be based on version of 1.76 of cvscommand.vim. The 
+      differences were so great that I pulled a fresh copy of cvscommand.vim
+      and went from there
+    - Added a Property Edit Function
+    - svk support is gone (maybe I'll put it back in sometime, or you are
+      welcome to)
+      
+2005.04.18  1.67.3
+    - fix svn info
+    - add quick hack svk support via SVNCommandAutoSVK variable
+
+2005.04.17  1.67.2
+    - re-added SVNInfo which got reverted in previous version
+    - pass -v to "svn status" for SVNStatus()
+    - add SVNCommitDiff for grabbing a diff from the files listed in
+      svn-commit.tmp
+
+2005.04.17  1.67.1
+    - updated to be based on version 1.67 of cvscommand.vim
+    - included svn commit and svn log syntax highlighting
